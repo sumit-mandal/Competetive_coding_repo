@@ -1,0 +1,18 @@
+<Shot>
+	BoxLayout:
+		orientation: "horizontal"
+		size: root.width, root.height
+
+		Button:
+			id: but_one
+			text: "Button One"
+			on_press: root.disable_other()
+			size_hint: (1, 1)
+			disabled: False
+
+		Button:
+			id: but_two
+			text: "Button Two"
+			on_press: root.disable_other()
+			size_hint: (1, 1)
+			disabled: True
